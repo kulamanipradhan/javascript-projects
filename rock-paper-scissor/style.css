@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: hsl(157, 68%, 70%);
+    color: rgb(9, 4, 4);
+    height: 5rem;
+    line-height: 5rem;
+    padding-top: 20px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 5rem;
+}
+
+.choice {
+    height: 170px;
+    width: 170px;
+}
+
+img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choice:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 30px;
+}
+
+#user-score,
+#computer-score {
+    font-size: 4rem;
+}
+
+.msg-container {
+    padding-top: 30px;
+}
+
+#msg {
+    background-color: rgb(33, 58, 50);
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 2px;
+   
+}
+@media only screen and (max-width: 600px) {
+    #msg {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+}
+.game-controls {
+    margin-top: 20px;
+}
+
+button{
+    font-size: 1rem;
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+#reset
+{
+    color:white;
+    background-color: green;
+}
